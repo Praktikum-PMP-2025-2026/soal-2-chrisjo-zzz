@@ -52,11 +52,11 @@ int main() {
 
     for (int i = 0; i < R; i++) {
         for (int j = 0; j < C; j++) {
-            if (grid[i][j] == 1 && !visited[i][j]) {
+            if (grid[i][j] == '1' && !visited[i][j]) {
                 x++;
-                int current_size = dfs(i, j);
-                if (current_size > y) {
-                    y = current_size;
+                int curr_size = dfs(i, j);
+                if (curr_size > y) {
+                    y = curr_size;
                 }
             }
         }
